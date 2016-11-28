@@ -10,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font: normal 100%/1.3;
+  font: normal 100%/1.3 Georgia, serif;
 
 }
 
@@ -28,22 +28,29 @@ body {
 }
 
 h2 {
-  font-family: 'Denk One', sans-serif;
+  font-family: "Denk One", sans-serif;
   font-size: 1.5rem;
+  margin-left: .5rem;
+  margin-top: 1rem;
 }
 
 p {
   font-family: Georgia, serif;
+  margin-left: .5rem;
 }
 
 .text {
   background-color: #e2e2e2;
-  padding: .6em;
+  padding: .3em;
   margin: 0;
 }
 
 @media only screen and (min-width: 25em) {
 
+  html {
+    font: 100%;
+    line-height: 1.3;
+  }
 }
 
 @media only screen and (min-width: 38em) {
@@ -57,19 +64,40 @@ p {
     position: absolute;
     margin: 1rem;
     padding: .3rem 1rem;
-    bottom: 1px;
-    right: 1px;
+    bottom: .5rem;
+    right: .5rem;
     background-color: rgba(0, 0, 0, .3);
     color: #fff;
     width: 60%;
     border-radius: 4px;
   }
 
-@media only screen and (min-width: 60em) {
-
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
 }
 
+@media only screen and (min-width: 60em) {
+
+  .text {
+    width: 40%;
+  }
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+}
 
 @media only screen and (min-width: 90em) {
 
+  .text {
+    width: 30%;
+  }
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
 }
